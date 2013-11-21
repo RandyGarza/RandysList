@@ -1,0 +1,86 @@
+ <html>
+ <head>
+ <style>
+ .table-responsive {width:80%;margin:3% 5%;}
+.table-curved {
+   border-collapse: separate;
+   border: solid #ccc 1px;
+   border-radius: 6px;
+   border-left: 0px;
+   border-top: 0px;
+}
+.table-curved > thead:first-child > tr:first-child > th {
+    border-bottom: 0px;
+    border-top: solid #ccc 1px;
+}
+.table-curved td, .table-curved th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.table-curved > :first-child > :first-child > :first-child {
+    border-radius: 6px 0 0 0;
+}
+.table-curved > :first-child > :first-child > :last-child {
+    border-radius: 0 6px 0 0;
+}
+.table-curved > :last-child > :last-child > :first-child {
+    border-radius: 0 0 0 6px;
+}
+.table-curved > :last-child > :last-child > :last-child {
+    border-radius: 0 0 6px 0;
+}
+</style>
+ </head>
+ <body>
+ 
+ <div class="table-responsive">
+    <table class="table table-curved">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Table heading</th>
+                <th>Table heading</th>
+                <th>Table heading</th>
+                <th>Table heading</th>
+                <th>Table heading</th>
+                <th>Table heading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                <td>Proin in tortor porta, pharetra ante quis, dapibus neque.</td>
+                <td>Cras non mi condimentum, pellentesque massa eget, dapibus elit.</td>
+                <td>Vestibulum tempus orci quis sem blandit tincidunt.</td>
+                <td>Proin ut mi in tellus dapibus facilisis.</td>
+                <td>Quisque laoreet justo sed odio sollicitudin, id cursus odio feugiat.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Integer ultrices augue eget lorem tempor posuere.</td>
+                <td>Donec sed nulla sit amet urna fringilla adipiscing.</td>
+                <td>Quisque laoreet justo sed odio sollicitudin, id cursus odio feugiat.</td>
+                <td>Maecenas eget ante aliquam, lobortis sem tempus, fringilla tortor.</td>
+                <td>Nulla at nunc semper, pulvinar purus id, porttitor ante.</td>
+                <td>Integer ultrices augue eget lorem tempor posuere.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mauris vulputate nulla vel metus cursus, eget porttitor turpis euismod.</td>
+                <td>Cras nec dolor sit amet ipsum pellentesque gravida.</td>
+                <td>Donec sed nulla sit amet urna fringilla adipiscing.</td>
+                <td>Quisque ullamcorper urna ac elit cursus, nec imperdiet magna laoreet.</td>
+                <td>Nulla at nunc semper, pulvinar purus id, porttitor ante.</td>
+                <td>Quisque laoreet justo sed odio sollicitudin, id cursus odio feugiat.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+ 
+ 
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+ <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+ </body>
+ </html>
